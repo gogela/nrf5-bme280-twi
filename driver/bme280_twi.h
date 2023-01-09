@@ -101,6 +101,7 @@ typedef struct {
 	uint8_t	standby;
 	uint8_t	filter;
 	uint8_t	temp_oversampling;
+	uint8_t	pres_oversampling;
 } bme280_twi_config_t;
 
 /**
@@ -108,6 +109,7 @@ typedef struct {
  */
 typedef struct {
 	int32_t temp;
+	uint32_t pres;
 } bme280_twi_data_t;
 
 /**

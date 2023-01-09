@@ -1,3 +1,10 @@
+#modification of knuta/nrf5-bme280-twi driver
+- added pressure measurement
+- changed to FORCED mode (and waiting for read data instead of async)
+- fixed calibration bug (32 bit registers messed up negative calib. values)
+- no example provided, see the original knuta repo for temperature demo
+
+Original Readme:
 # A nRF5 TWI driver for the BME280 sensor
 
 This is a driver for the BME280 temperature, humidity and pressure sensor. It
